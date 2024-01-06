@@ -1,5 +1,8 @@
 /* W3Schools CSS styles */
-/* Note: You can customize these styles further based on your needs */
+/* Universal box sizing */
+* {
+    box-sizing: border-box
+}
 
 body {
     font-family: "Lato", sans-serif;
