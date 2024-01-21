@@ -1,0 +1,89 @@
+/* stops image flicker when page loads */
+/*body :after {
+    background-color: black;
+    position: relative;
+    width: 0;
+    height: 0;
+    overflow: hidden;
+    z-index: -1;
+}*/
+
+.w3-round-image {
+    width: 100%;
+    max-width: 100%;            /* scales image down for smaller screens */
+    border-radius: 10px;        /* rounds the images edges*/        
+}
+
+#appetizersImg .w3-quarter,
+#mainsImg .w3-quarter,
+#dessertsImg .w3-quarter,
+#beveragesImg .w3-quarter {
+    height: 200px;
+    margin-bottom: 20px;
+}
+
+.w3-bar-item.w3-button {
+    border-radius: 10px;        /* rounds edges on nav links */
+    margin: 0 8px;              /* adds space between links */
+}
+
+/* styles for centering content */
+.w3-container {
+    text-align: center;
+}
+
+.w3-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;            /* moves opening hours next to calendar */
+}
+
+a {
+    text-decoration: none;
+           /* sets link color */
+    cursor: pointer;        /* sets cursor to a pointer */
+}
+
+a:hover {
+    text-decoration: underline; /* underlines on hover */
+}
+
+h1 h2 h3 h4{
+    color: #fff;
+}
+
+p {
+    color: #fff;
+    max-width: 800px;       /* for better readability */
+    margin: 0 auto;         /* centers paragraph horizontally */
+}
+
+
+
+/* Adds spacing between title and paragraph */
+.w3-row h1,
+.w3-row p {
+    margin-bottom: 20px;
+}
+
+.w3-half{
+    flex: 1;          /* moves opening hours next to calendar */
+    box-sizing: border-box;
+}
+
+.w3-container .w3-right {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Media query for image to fit smaller screens */
+@media screen and (max-width: 600px) {
+    .w3-half {
+        width: 100%;
+        box-sizing: border-box;
+        margin-bottom: 20px;
+    }
+    
+}

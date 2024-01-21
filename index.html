@@ -4,51 +4,55 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-    <link rel="stylesheet" href="styles.css">
-    <title>The Haukai Restaurant - Home</title>
+    <link rel="stylesheet" href="css/main.css">
+    <title>Home</title>
 </head>
+
 <body class="w3-black">
-    <header class="w3-container w3-black w3-center">
-        <div class="w3-bar-item w3-padding">
-            <img src="images/logo.jpeg" alt="The Haukai Restaurant Logo" class="w3-image">
+    
+    <header class="w3-container w3-center">        
+        <div class="w3-bar-item w3-padding w3-left-align">
+            <img src="images/logo.svg" alt="The Haukai Restaurant Logo" class="w3-image">
         </div>
-        <nav class="w3-bar">
-            <a href="menu.html" class="w3-bar-item w3-button">Menu</a>
-            <a href="reservations.html" class="w3-bar-item w3-button">Reservations</a>
-            <a href="about.html" class="w3-bar-item w3-button">About Us</a>
-            <a href="contact.html" class="w3-bar-item w3-button">Contact Us</a>
+        
+        <nav class="w3-bar w3-right">
+            <a href="menu.html" target="_blank" class="w3-bar-item w3-button w3-hide-small">MENU</a>
+            <a href="reservations.html" target="_blank" class="w3-bar-item w3-button w3-hide-small">RESERVATIONS</a>
+            <a href="hours.html" target="_blank" class="w3-bar-item w3-button w3-hide-small">HOURS</a>
+            <a href="about.html" target="_blank" class="w3-bar-item w3-button w3-hide-small">ABOUT US</a>
+            <a href="contact.html" target="_blank" class="w3-bar-item w3-button w3-hide-small">CONTACT US</a>
+            <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="myFunction()">&#9776;</a>
         </nav>
+        
+        <div id="smallMenu" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium">
+            <a href="menu.html" target="_blank" class="w3-bar-item w3-button w3-padding-16">MENU</a>
+            <a href="reservations.html" target="_blank" class="w3-bar-item w3-button w3-padding-16">RESERVATIONS</a>
+            <a href="hours.html" target="_blank" class="w3-bar-item w3-button w3-padding-16">HOURS</a>
+            <a href="about.html" target="_blank" class="w3-bar-item w3-button w3-padding-16">ABOUT US</a>
+            <a href="contact.html" target="_blank" class="w3-bar-item w3-button w3-padding-16">CONTACT US</a>
+        </div>
     </header>
-    <section class="w3-container w3-center w3-padding-32">
-        <h2>This is The Haukai Restaurant</h2>
-        <p>We are open Weds, Thurs, Fri, Sat & Sun. Evenings only 6pm till late</p>
-        <p>Welcome to The Haukai Restaurant. Delicious food in a relaxed atmosphere.</p>
-    </section>
-    <section class="w3-row-padding w3-center w3-padding-16">
-        <!-- Replace the following with your actual food images and descriptions -->
-        <div class="w3-quarter">
-            <img src="food1.jpg" alt="Food 1" style="width:100%" class="w3-round">
-            <p>Delicious Dish 1</p>
-        </div>
-        <div class="w3-quarter">
-            <img src="food2.jpg" alt="Food 2" style="width:100%" class="w3-round">
-            <p>Scrumptious Dish 2</p>
-        </div>
-        <div class="w3-quarter">
-            <img src="food3.jpg" alt="Food 3" style="width:100%" class="w3-round">
-            <p>Tasty Dish 3</p>
-        </div>
-        <div class="w3-quarter">
-            <img src="food4.jpg" alt="Food 4" style="width:100%" class="w3-round">
-            <p>Savory Dish 4</p>
-        </div>
-    </section>
-    <section class="w3-center w3-padding-16">
-        <button class="w3-button w3-black w3-round-large">Make a Reservation</button>
-        <button class="w3-button w3-black w3-round-large">Explore the Menu</button>
-    </section>
-    <footer class="w3-container w3-black w3-padding w3-margin-top">
+        
+    <main class="w3-container w3-center w3-padding-32">         
+            <h2>This is The Haukai Restaurant</h2>
+            <p>Haere Mai to The Haukai Restaurant. Delicious food in a relaxed atmosphere.</p>
+            <p>Come and enjoy the Aotearoa New Zealand te ao M&amacr;ori experience with Karakia before eating your kai.</p><br>
+            <img src="images/restaurant.jpg" alt="restaurant dining area" class="w3-round-image">
+    </main>
+        
+    <footer>
         <p>&copy; 2024 The Haukai Restaurant. All rights reserved.</p>
     </footer>
+
+    <script>
+        function myFunction() {
+          var x = document.getElementById("smallMenu");
+          if (x.className.indexOf("w3-show") == -1) {
+            x.className += " w3-show";
+          } else { 
+            x.className = x.className.replace(" w3-show", "");
+          }
+        }
+    </script>
 </body>
 </html>

@@ -1,35 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="css/main.css">
     <title>About Us</title>
 </head>
-<body class="w3-light-grey">
-    <header class="w3-container w3-black w3-left-align">
-        <div class="w3-bar-item w3-padding">
+
+<body class="w3-black">
+    
+    <header class="w3-container w3-black w3-center">
+        <div class="w3-bar-item w3-padding w3-left-align">
             <img src="images/logo.svg" alt="The Haukai Restaurant Logo" class="w3-image">
         </div>
-        <nav class="w3-bar w3-right-align">
-            <a href="menu.html" class="w3-bar-item w3-button w3-round-large">Menu</a>
-            <a href="reservations.html" class="w3-bar-item w3-button w3-round-large">Reservations</a>
-            <a href="about.html" class="w3-bar-item w3-button w3-round-large">About Us</a>
-            <a href="contact.html" class="w3-bar-item w3-button w3-round-large">Contact Us</a>
+        
+        <nav class="w3-bar w3-right">
+            <a href="index.html" target="_blank" class="w3-bar-item w3-button w3-hide-small">HOME</a>
+            <a href="reservations.html" target="_blank" class="w3-bar-item w3-button w3-hide-small">RESERVATIONS</a>
+            <a href="hours.html" target="_blank" class="w3-bar-item w3-button w3-hide-small">HOURS</a>
+            <a href="menu.html" target="_blank" class="w3-bar-item w3-button w3-hide-small">MENU</a>
+            <a href="contact.html" target="_blank" class="w3-bar-item w3-button w3-hide-small">CONTACT US</a>
+            <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="myFunction()">&#9776;</a>
         </nav>
+        
+        <div id="smallMenu" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium">
+            <a href="index.html" target="_blank" class="w3-bar-item w3-button w3-padding-16">HOME</a>
+            <a href="reservations.html" target="_blank" class="w3-bar-item w3-button w3-padding-16">RESERVATIONS</a>
+            <a href="hours.html" target="_blank" class="w3-bar-item w3-button w3-padding-16">HOURS</a>
+            <a href="menu.html" target="_blank" class="w3-bar-item w3-button w3-padding-16">MENU</a>
+            <a href="contact.html" target="_blank" class="w3-bar-item w3-button w3-padding-16">CONTACT US</a>
+        </div>
     </header>
-    <section>
+    
+    <main class="w3-container w3-center w3-padding-32">
+        <div class="image "></div>
         <h1>About Us</h1>
-        <!-- Information about the restaurant and its history goes here -->
-    </section>
-    <!-- Additional content for the about us page -->
-    <section class="w3-center w3-padding-16">
-        <button class="w3-button w3-black w3-round-large">Make a Reservation</button>
-        <button class="w3-button w3-black w3-round-large">Explore the Menu</button>
-    </section>
+        <p>You will find The Haukai Restaurant nestled in a  typical New Zealand forest with the 'greenest of green' New 
+        Zealand Silver fern trees.  We specialise in M&amacr;ori and P&amacr;keha kai and include small parts of Te Ao M&amacr;ori
+        culture like karakia to show thanks for  our food.<br>Your hosts: Nui & Mandy welcome you to their idea
+        of paradise, one we are sure you will admire and love too. We have been enjoying and sharing delicious food in 
+        this small part of paradise for nearly a decade and invite you to try it out!!! <br>Haere Mai.</p> <br><br>
+                                
+        <h2>Find us here</h2>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3198.073870851494!2d175.79886797631468!3d-36.7207870723684!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6d724570ec1ba8d9%3A0x1854d63e17f67249!2s5%20Opito%20Bay%20Road%2C%20Opito%20Bay%203592!5e0!3m2!1sen!2snz!4v1705196822817!5m2!1sen!2snz" 
+        width="400" 
+        height="300" 
+        style="border:0;" 
+        allowfullscreen="" 
+        loading="lazy" 
+        referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>                           
+        
+    </main>
+
     <footer class="w3-container w3-black w3-padding w3-margin-top">
         <p>&copy; 2024 The Haukai Restaurant. All rights reserved.</p>
     </footer>
+
+    <script>
+        function myFunction() {
+          var x = document.getElementById("smallMenu");
+          if (x.className.indexOf("w3-show") == -1) {
+            x.className += " w3-show";
+          } else { 
+            x.className = x.className.replace(" w3-show", "");
+          }
+        }
+    </script>
 </body>
 </html>
