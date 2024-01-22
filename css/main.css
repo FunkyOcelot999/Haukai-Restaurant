@@ -1,23 +1,13 @@
-/* stops image flicker when page loads */
-/*body :after {
-    background-color: black;
-    position: relative;
-    width: 0;
-    height: 0;
-    overflow: hidden;
-    z-index: -1;
-}*/
-
 .w3-round-image {
     width: 100%;
     max-width: 100%;            /* scales image down for smaller screens */
     border-radius: 10px;        /* rounds the images edges*/        
 }
 
-#appetizersImg .w3-quarter,
+#appetizersImg .w3-quarter,     /* food images for menu */
 #mainsImg .w3-quarter,
 #dessertsImg .w3-quarter,
-#beveragesImg .w3-quarter {
+#beveragesImg .w3-quarter {        
     height: 200px;
     margin-bottom: 20px;
 }
@@ -59,8 +49,6 @@ p {
     margin: 0 auto;         /* centers paragraph horizontally */
 }
 
-
-
 /* Adds spacing between title and paragraph */
 .w3-row h1,
 .w3-row p {
@@ -72,18 +60,13 @@ p {
     box-sizing: border-box;
 }
 
-.w3-container .w3-right {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+/* images not displayed on screen less than 600px */
+@media screen and (max-width:600px) {
+    #appetizersImg .w3-quarter
+    #mainsImg
+    #dessertsImg
+    #beveragesImg {
+        display: none;
+    }
 }
 
-/* Media query for image to fit smaller screens */
-@media screen and (max-width: 600px) {
-    .w3-half {
-        width: 100%;
-        box-sizing: border-box;
-        margin-bottom: 20px;
-    }
-    
-}
