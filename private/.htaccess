@@ -1,0 +1,4 @@
+AuthName "staff"
+AuthUserFile "C:/UniServerZ/www/HaukaiRestaurant/passwd/.htpasswd"
+AuthType Basic
+Require valid-user 

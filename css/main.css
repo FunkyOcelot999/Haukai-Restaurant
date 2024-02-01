@@ -62,11 +62,68 @@ p {
 
 /* images not displayed on screen less than 600px */
 @media screen and (max-width:600px) {
-    #appetizersImg .w3-quarter
-    #mainsImg
-    #dessertsImg
-    #beveragesImg {
+    #appetizersImg .w3-quarter,
+    #mainsImg .w3-quarter, 
+    #dessertsImg .w3-quarter,
+    #beveragesImg .w3-quarter {
         display: none;
     }
 }
 
+/* Flexbox styles for Staff page */
+
+.staffPage body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.staffPage header {
+    width: 100%;
+}
+
+.staffPage main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.staffPage footer {
+    width: 100%;
+}
+
+.staffPage table.info table.roster {
+    /*border-collapse: collapse;*/
+    max-width: 100%;
+    margin-top: 20px;
+}
+
+.staffPage table.info, table.info th, table.info td {
+    border: 1px solid #757474;
+}
+
+.staffPage table.roster, table.roster th, table.roster td {
+    border: 1px solid #757474;
+}
+
+.staffPage table.info th, table.info td {
+    padding: 15px;
+    text-align: left;
+}
+
+.staffPage table.roster th, table.roster td {
+    padding: 15px;
+    text-align: left;
+}
+
+.staffPage table.info th {
+    background-color: #83aaa5;
+    color: white;
+}
+
+.staffPage table.roster th {
+    background-color: #83aaa5;
+    color: white;
+}
