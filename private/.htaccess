@@ -1,0 +1,4 @@
+AuthName "staff"
+AuthUserFile "../passwd/.htpasswd"
+AuthType Basic
+Require valid-user 
